@@ -29,5 +29,11 @@ namespace BinaryTreeDay17
                     Current.Right = AddRecursively(Current.Right, Key);
                 return Current;
             }
+        private int getSizeRecursively(BinarySearchTreeNode<K> Current)
+        {
+           
+            return Current == null ? 0 : 1 + this.getSizeRecursively(Current.Left)
+                                           + this.getSizeRecursively(Current.Right);
         }
+    }
 }

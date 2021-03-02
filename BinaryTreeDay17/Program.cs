@@ -25,6 +25,9 @@ namespace BinaryTreeDay17
             BinaryTree.AddNode(95);
             BinaryTree.AddNode(65);
             BinaryTree.AddNode(3);
+
+            int Size = BinaryTree.GetSize();
+            Console.WriteLine(Size);
         }
     }
 }
