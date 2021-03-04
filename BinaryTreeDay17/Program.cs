@@ -10,24 +10,23 @@ namespace BinaryTreeDay17
             Console.WriteLine("Binary Tree search");
             BinarySearchTree<int> BinaryTree = new BinarySearchTree<int>();
             ///<summary>
-            ///UC1: Add the node in the tree
+            ///UC1
             /// </summary>
-            BinaryTree.AddNode(56);
+            BinaryTree.AddNode(10);
+            BinaryTree.AddNode(20);
             BinaryTree.AddNode(30);
-            BinaryTree.AddNode(70);
-            BinaryTree.AddNode(22);
+            BinaryTree.AddNode(15);
+            BinaryTree.AddNode(05);
             BinaryTree.AddNode(40);
-            BinaryTree.AddNode(11);
-            BinaryTree.AddNode(63);
-            BinaryTree.AddNode(67);
-            BinaryTree.AddNode(16);
-            BinaryTree.AddNode(60);
-            BinaryTree.AddNode(95);
-            BinaryTree.AddNode(65);
-            BinaryTree.AddNode(3);
-
-            int Size = BinaryTree.GetSize();
+            BinaryTree.AddNode(35);
+            //UC2 Size of tree
+            int Size = BinaryTree.GetSizeOfTree();
             Console.WriteLine(Size);
+            //UC3 search
+            bool result = BinaryTree.SearchKey(15);
+            Console.WriteLine(result);
+
         }
+
     }
 }

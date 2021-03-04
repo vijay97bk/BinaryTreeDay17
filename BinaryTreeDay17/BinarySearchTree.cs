@@ -2,9 +2,9 @@
 {
     public class BinarySearchTreeNode<K>
     {
-        public K Key;                                                        //values going to add
-        public BinarySearchTreeNode<K> Right;                                //create variable for right side node
-        public BinarySearchTreeNode<K> Left;                                 //creates varibale for left side node
+        public K Key;                                                     
+        public BinarySearchTreeNode<K> Right;                              
+        public BinarySearchTreeNode<K> Left;                                
 
         public BinarySearchTreeNode(K Key)
         {
